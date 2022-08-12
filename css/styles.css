@@ -2,5 +2,33 @@
   display: none;
 }
 .jumbotron {
-  margin: 10px;
+  margin: 30px;
+}
+.question1 {
+  background-color: rgb(235, 255, 251);
+  margin: 30px;
+  padding: 20px;
+}
+.question2 {
+  background-color:  rgb(235, 255, 251);
+  margin: 30px;
+  padding: 20px;
+}
+.question3 {
+  background-color: rgb(235, 255, 251);
+  margin: 30px;
+  padding: 20px;
+}
+.question4 {
+  background-color: rgb(235, 255, 251);
+  margin: 30px;
+  padding: 20px;
+}
+.question5 {
+  background-color:  rgb(235, 255, 251);
+  margin: 30px;
+  padding: 20px;
+}
+body {
+  font-size: 20px;
 }

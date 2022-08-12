@@ -15,14 +15,18 @@
       <p class="lead">Find out if you're more suited for Javascript, C#, or Python</p>
       <hr class="my-4">
       <p>Click Here to Play</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Play</a>
+      <a id="playButton" class="btn btn-dark btn-lg" href="#" role="button">Play</a>
     </div>
 
-    <div id="body" class="hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
       <!--Make radio Buttons-->
       <form id="radio-form">
+        <div class="question1">
         <!--Question 1-->
-        <p>What Kind of Developer Do You Want to Be?</p>
+        <p><strong>What Kind of Developer Do You Want to Be?</strong></p>
         <label>
           <input id="Game" type="radio" name="question1" value="Game">
           Game
@@ -35,9 +39,11 @@
           <input id="Data Scientist" type="radio" name="question1" value="Data Scientist">
           Data Scientist
         </label><br>
+        </div>
 
+        <div class="question2">
         <!--Question 2-->
-        <p>What Type of Companies Would You Want to Work For?</p>
+        <p><strong>What Type of Companies Would You Want to Work For?</strong></p>
         <label>
           <input id="Startups" type="radio" name="question2" value="Startups">
           Startups
@@ -50,9 +56,11 @@
           <input id="Traditional Enterprises" type="radio" name="question2" value="Traditional Enterprises">
           Traditional Enterprises 
         </label><br>
+      </div>
 
+        <div class="question3">
         <!--Question 3-->
-        <p>What Platform Would You Rather Work With?</p>
+        <p><strong>What Platform Would You Rather Work With?</strong></p>
         <label>
           <input id="Mac" type="radio" name="question3" value="Mac">
           Mac
@@ -65,9 +73,11 @@
           <input id="Android" type="radio" name="question3" value="Android">
           Android
         </label><br>
+      </div>
 
+        <div class="question4">
           <!--Question 4-->
-        <p>What is More Interesting to You? </p>
+        <p><strong>What is More Interesting to You?</strong></p>
         <label>
           <input id="Front End" type="radio" name="question4" value="Front End">
           Front End
@@ -76,9 +86,11 @@
           <input id="Back End" type="radio" name="question4" value="Back End">
           Back End
         </label><br>
+        </div>
 
+          <div class="question5">
           <!--Question 5-->
-        <p>How Much Experience Do You Have?</p>
+        <p><strong>How Much Experience Do You Have?</strong></p>
         <label>
           <input id="Fully Experienced" type="radio" name="question5" value="Fully Experienced">
           Fully Experienced
@@ -91,11 +103,16 @@
           <input id="Little to None"type="radio" name="question5" value="Little to None">
           Little to None
         </label><br>
+      </div>
 
         <!--Submit button-->
-        <button type="submit">Create Results</button>
+        <button type="submit"><strong>Create Results</strong></button>
       </form>
+      </div>
+      <div class="col-3"></div>
+      </div>
     </div>
+   
 
     <!--Output for results-->
     <div id="javascript" class="hidden">
@@ -110,6 +127,7 @@
     <div id="other" class="hidden">
       <p>Sorry! We couldn't find a perfect match for you</p>
     </div>
+
 
   </body>
 </html>

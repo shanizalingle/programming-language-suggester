@@ -8,7 +8,6 @@ function hideResults () {
   document.getElementById("c#").setAttribute("class", "hidden");
   document.getElementById("python").setAttribute("class", "hidden");
   document.getElementById("other").setAttribute("class", "hidden");
-  document.getElementById("body").setAttribute("class", "hidden");
 }
 
 // Evaluate quiz answer
@@ -42,6 +41,7 @@ window.onload = function() {
 
   window.addEventListener("load", function() {
     const form = document.getElementById("radio-form");
+    //form.addEventListener("submit", quiz);
     });
   };
 }
