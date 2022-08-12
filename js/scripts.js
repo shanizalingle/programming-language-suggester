@@ -1,57 +1,53 @@
 //Business Logic
 
 // User Interface Logic
+
+// Hide results for quiz
 function hideResults () {
-  document.getElementById("hideResults").setAttribute("class", "hidden");
+  document.getElementById("javascript").setAttribute("class", "hidden");
+  document.getElementById("c#").setAttribute("class", "hidden");
+  document.getElementById("python").setAttribute("class", "hidden");
+  document.getElementById("other").setAttribute("class", "hidden");
 }
 
+// Evaluate quiz answer
 window.onload = function() {
   const form = document.querySelector("form");
   form.onsubmit = function(event) {
     event.preventDefault();
     hideResults();
-    console.log("function");
+  
+    let javaScript = document.getElementById("javascript");
+    let cSharp = document.getElementById("c#");
+    let python = document.getElementById("python");
+    let other = document.getElementById("other");
 
-  const q1 = document.querySelector("input[name=question1]:checked".value);
-  const q2 = document.querySelector("input[name=question2]:checked".value);
-  const q3 = document.querySelector("input[name=question3]:checked".value);
-  const q4 = document.querySelector("input[name=question4]:checked".value);
-  const q5 = document.querySelector("input[name=question5]:checked".value);
-
-  let results;
-  if (q1 === document.getElementById("Game").checked && q2 === document.getElementById("Startups").checked && q3 === document.getElementById("Mac").checked && q4 === document.getElementById("Front End").checked && q5 === document.getElementById("Fully Experienced").checked) {
-    results = "Python";
+    if (document.getElementById("Web").checked && document.getElementById("Traditional Enterprises").checked && document.getElementById("Mac").checked && document.getElementById("Back End").checked && document.getElementById("Some Experience").checked || document.getElementById("Little to None").checked ) {
+    python.removeAttribute("class");
     console.log("python");
-  }
+
+    } else if (document.getElementById ("Web").checked && document.getElementById("Startups").checked || document.getElementById("Small Business'").checked && document.getElementById("Mac").checked && document.getElementById("Front End").checked && document.getElementById("Some Experience").checked || document.getElementById("Little to None").checked) {
+    javaScript.removeAttribute("class");
+    console.log("javacsript");
+
+    } else if (document.getElementById("Game").checked && document.getElementById("Startups").checked && document.getElementById("Windows").checked || document.getElementById("Android").checked && document.getElementById("Front End").checked && document.getElementById("Some Experience").checked || document.getElementById("Fully Experienced").checked) {
+    cSharp.removeAttribute("class");
+    console.log("c#");
+
+    } else {
+      other.removeAttribute("class");
+    console.log("other");
+    }
 
   window.addEventListener("load", function() {
     const form = document.getElementById("radio-form");
     form.addEventListener("submit", quiz);
-  });
-
+    });
   };
-
-
-/*function quiz(event){
-  event.preventDefault();
-  console.log = ("hi");
-
-  const q1 = document.querySelector("input[name=question1]").value;
-  const q2 = document.querySelector("input[name=question2]").value;
-  const q3 = document.querySelector("input[name=question3]").value;
-  const q4 = document.querySelector("input[name=question4]").value;
-  const q5 = document.querySelector("input[name=question5]").value;
-
-  let results;
-  if (q1 === "Game" && q2 === "Startups" && q3 === "Mac" && q4 === "Front End" && q5 === "Fully Experienced") {
-    results = "Python"
-  }
-
-  document.getElementById("results").innerText = results;
 }
 
-window.addEventListener("load", function() {
-  const form = document.getElementById("radio-form");
-  form.addEventListener("submit", quiz);
-});
-*/
+/* const q1 = document.querySelector("input[name=question1]:checked".value);
+const q2 = document.querySelector("input[name=question2]:checked".value);
+const q3 = document.querySelector("input[name=question3]:checked".value);
+const q4 = document.querySelector("input[name=question4]:checked".value);
+const q5 = document.querySelector("input[name=question5]:checked".value); */
