@@ -16,77 +16,81 @@
       <!--Question 1-->
       <p>What Kind of Developer Do You Want to Be?</p>
       <label>
-        <input type="radio" name="question1" value="option1">
+        <input type="radio" name="question1" value="Game">
         Game
       </label><br>
       <label>
-        <input type="radio" name="question1" value="option2">
+        <input type="radio" name="question1" value="Web">
         Web
       </label><br>
       <label>
-        <input type="radio" name="question1" value="option3">
+        <input type="radio" name="question1" value="Data Scientist">
         Data Scientist
       </label><br>
 
       <!--Question 2-->
       <p>What Type of Companies Would You Want to Work For?</p>
       <label>
-        <input type="radio" name="question2" value="option1">
+        <input type="radio" name="question2" value="Startups">
         Startups
       </label><br>
       <label>
-        <input type="radio" name="question2" value="option2">
-        Small business
+        <input type="radio" name="question2" value="Small Business'">
+        Small business'
       </label><br>
       <label>
-        <input type="radio" name="question2" value="option3">
-        Traditional enterprises 
+        <input type="radio" name="question2" value="Traditional Enterprises">
+        Traditional Enterprises 
       </label><br>
 
       <!--Question 3-->
       <p>What Platform Would You Rather Work With?</p>
       <label>
-        <input type="radio" name="question3" value="option1">
+        <input type="radio" name="question3" value="Mac">
         Mac
       </label><br>
       <label>
-        <input type="radio" name="question3" value="option2">
+        <input type="radio" name="question3" value="Windows">
         Windows
       </label><br>
       <label>
-        <input type="radio" name="question3" value="option3">
+        <input type="radio" name="question3" value="Android">
         Android
       </label><br>
 
         <!--Question 4-->
-        <p>What is More Interesting to You? </p>
-        <label>
-          <input type="radio" name="question4" value="option1">
-          Front end
-        </label><br>
-        <label>
-          <input type="radio" name="question4" value="option2">
-          Back end
-        </label><br>
-        <label>
-          <input type="radio" name="question4" value="option3">
-          I'm not sure
-        </label><br>
+      <p>What is More Interesting to You? </p>
+      <label>
+        <input type="radio" name="question4" value="Front End">
+        Front End
+      </label><br>
+      <label>
+        <input type="radio" name="question4" value="Back End">
+        Back End
+      </label><br>
 
-          <!--Question 5-->
+        <!--Question 5-->
       <p>How Much Experience Do You Have?</p>
       <label>
-        <input type="radio" name="question5" value="option1">
-        Fully experienced
+        <input type="radio" name="question5" value="Fully Experienced">
+        Fully Experienced
       </label><br>
       <label>
-        <input type="radio" name="question5" value="option2">
-        Some experience
+        <input type="radio" name="question5" value="Some Experience">
+        Some Experience
       </label><br>
       <label>
-        <input type="radio" name="question5" value="option3">
-        Little to none
+        <input type="radio" name="question5" value="Little to None">
+        Little to None
       </label><br>
+
+      <!--Submit button-->
+      <button type="submit">Create Results</button>
     </form>
+
+    <!--Output for results-->
+    <div id="hideResults" class="hidden">
+      <p id="results"></p>
+    </div>
   </body>
 </html>
