@@ -8,27 +8,45 @@
   background-color: rgb(235, 255, 251);
   margin: 30px;
   padding: 20px;
+  border-radius: 10px;
 }
 .question2 {
   background-color:  rgb(235, 255, 251);
   margin: 30px;
   padding: 20px;
+  border-radius: 10px;
 }
 .question3 {
   background-color: rgb(235, 255, 251);
   margin: 30px;
   padding: 20px;
+  border-radius: 10px;
 }
 .question4 {
   background-color: rgb(235, 255, 251);
   margin: 30px;
   padding: 20px;
+  border-radius: 10px;
 }
 .question5 {
   background-color:  rgb(235, 255, 251);
   margin: 30px;
   padding: 20px;
+  border-radius: 10px;
 }
 body {
   font-size: 20px;
+}
+.button {
+  width: 450px;
+  background-color: rgb(54, 54, 54);
+  margin-left: 140px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  color: white;
+}
+h2{
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 60px;
 }

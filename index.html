@@ -11,7 +11,7 @@
 
     <!--Make header (jumbotron)-->
     <div class="jumbotron">
-      <h1 class="display-4">What is The Best Programming Language For Me?</h1>
+      <h1 class="display-4"><strong>What is The Best Programming Language For Me?</strong></h1>
       <p class="lead">Find out if you're more suited for Javascript, C#, or Python</p>
       <hr class="my-4">
       <p>Click Here to Play</p>
@@ -20,114 +20,120 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-      <!--Make radio Buttons-->
-      <form id="radio-form">
-        <div class="question1">
-        <!--Question 1-->
-        <p><strong>What Kind of Developer Do You Want to Be?</strong></p>
-        <label>
-          <input id="Game" type="radio" name="question1" value="Game">
-          Game
-        </label><br>
-        <label>
-          <input id="Web" type="radio" name="question1" value="Web">
-          Web
-        </label><br>
-        <label>
-          <input id="Data Scientist" type="radio" name="question1" value="Data Scientist">
-          Data Scientist
-        </label><br>
-        </div>
+        <div class="col-2"></div>
+        <div class="col-8">
 
-        <div class="question2">
-        <!--Question 2-->
-        <p><strong>What Type of Companies Would You Want to Work For?</strong></p>
-        <label>
-          <input id="Startups" type="radio" name="question2" value="Startups">
-          Startups
-        </label><br>
-        <label>
-          <input id="Small Business'"type="radio" name="question2" value="Small Business'">
-          Small Business'
-        </label><br>
-        <label>
-          <input id="Traditional Enterprises" type="radio" name="question2" value="Traditional Enterprises">
-          Traditional Enterprises 
-        </label><br>
-      </div>
+          <!--Make radio Buttons-->
+          <form id="radio-form">
+            <div class="question1">
+              <!--Question 1-->
+              <p><strong>What Kind of Developer Do You Want to Be?</strong></p>
+              <label>
+                <input id="Game" type="radio" name="question1" value="Game">
+                Game
+              </label><br>
+              <label>
+                <input id="Web" type="radio" name="question1" value="Web">
+                Web
+              </label><br>
+              <label>
+                <input id="Data Scientist" type="radio" name="question1" value="Data Scientist">
+                Data Scientist
+              </label><br>
+            </div>
 
-        <div class="question3">
-        <!--Question 3-->
-        <p><strong>What Platform Would You Rather Work With?</strong></p>
-        <label>
-          <input id="Mac" type="radio" name="question3" value="Mac">
-          Mac
-        </label><br>
-        <label>
-          <input id="Windows" type="radio" name="question3" value="Windows">
-          Windows
-        </label><br>
-        <label>
-          <input id="Android" type="radio" name="question3" value="Android">
-          Android
-        </label><br>
-      </div>
+            <div class="question2">
+              <!--Question 2-->
+              <p><strong>What Type of Companies Would You Want to Work For?</strong></p>
+              <label>
+                <input id="Startups" type="radio" name="question2" value="Startups">
+                Startups
+              </label><br>
+              <label>
+                <input id="Small Business'"type="radio" name="question2" value="Small Business'">
+                Small Business'
+              </label><br>
+              <label>
+                <input id="Traditional Enterprises" type="radio" name="question2" value="Traditional Enterprises">
+                Traditional Enterprises 
+              </label><br>
+            </div>
 
-        <div class="question4">
-          <!--Question 4-->
-        <p><strong>What is More Interesting to You?</strong></p>
-        <label>
-          <input id="Front End" type="radio" name="question4" value="Front End">
-          Front End
-        </label><br>
-        <label>
-          <input id="Back End" type="radio" name="question4" value="Back End">
-          Back End
-        </label><br>
-        </div>
+            <div class="question3">
+            <!--Question 3-->
+              <p><strong>What Platform Would You Rather Work With?</strong></p>
+              <label>
+                <input id="Mac" type="radio" name="question3" value="Mac">
+                Mac
+              </label><br>
+              <label>
+                <input id="Windows" type="radio" name="question3" value="Windows">
+                Windows
+              </label><br>
+              <label>
+                <input id="Android" type="radio" name="question3" value="Android">
+                Android
+              </label><br>
+            </div>
 
-          <div class="question5">
-          <!--Question 5-->
-        <p><strong>How Much Experience Do You Have?</strong></p>
-        <label>
-          <input id="Fully Experienced" type="radio" name="question5" value="Fully Experienced">
-          Fully Experienced
-        </label><br>
-        <label>
-          <input id="Some Experience" type="radio" name="question5" value="Some Experience">
-          Some Experience
-        </label><br>
-        <label>
-          <input id="Little to None"type="radio" name="question5" value="Little to None">
-          Little to None
-        </label><br>
-      </div>
+            <div class="question4">
+            <!--Question 4-->
+              <p><strong>What is More Interesting to You?</strong></p>
+              <label>
+                <input id="Front End" type="radio" name="question4" value="Front End">
+                Front End
+              </label><br>
+              <label>
+                <input id="Back End" type="radio" name="question4" value="Back End">
+                Back End
+              </label><br>
+            </div>
 
-        <!--Submit button-->
-        <button type="submit"><strong>Create Results</strong></button>
-      </form>
-      </div>
-      <div class="col-3"></div>
+            <div class="question5">
+            <!--Question 5-->
+              <p><strong>How Much Experience Do You Have?</strong></p>
+              <label>
+                <input id="Fully Experienced" type="radio" name="question5" value="Fully Experienced">
+                Fully Experienced
+              </label><br>
+              <label>
+                <input id="Some Experience" type="radio" name="question5" value="Some Experience">
+                Some Experience
+              </label><br>
+              <label>
+                <input id="Little to None"type="radio" name="question5" value="Little to None">
+                Little to None
+              </label><br>
+            </div>
+
+            <!--Submit button-->
+            <button type="submit" class="button"><strong>Create Results</strong></button>
+          </form>
+          </div>
+        <div class="col-2"></div>
       </div>
     </div>
-   
 
     <!--Output for results-->
-    <div id="javascript" class="hidden">
-      <p>javascript</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div id="javascript" class="hidden">
+              <h2>"javascript"</h2>
+            </div>
+            <div id="c#" class="hidden">
+              <h2>"c#"</h2>
+            </div>
+            <div id="python" class="hidden">
+              <h2>"python"</h2>
+            </div>
+            <div id="other" class="hidden">
+              <h2>"Sorry! We couldn't find a perfect match for you"</h2>
+            </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
     </div>
-    <div id="c#" class="hidden">
-      <p>c#</p>
-    </div>
-    <div id="python" class="hidden">
-      <p>python</p>
-    </div>
-    <div id="other" class="hidden">
-      <p>Sorry! We couldn't find a perfect match for you</p>
-    </div>
-
-
   </body>
 </html>
